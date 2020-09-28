@@ -2,8 +2,8 @@ package ds.swimmingpoolclient;
 
 import ds.swimmingpoolclient.controllers.ClientTest;
 import ds.swimmingpoolclient.controllers.EmployeeTest;
-import ds.swimmingpoolclient.models.SwimmingStuff;
-import org.springframework.boot.SpringApplication;
+import ds.swimmingpoolclient.controllers.PassTest;
+import ds.swimmingpoolclient.controllers.StuffRent;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
@@ -13,10 +13,12 @@ public class SwimmingpoolclientApplication {
         try{
             EmployeeTest employeeTest = new EmployeeTest();
             ClientTest clientTest = new ClientTest();
-            SwimmingStuff swimmingStuffTest = new SwimmingStuff();
+            StuffRent stuffRent = new StuffRent();
 
             employeeTest.testService();
             clientTest.testService();
+            stuffRent.test();
+
 
 
 

@@ -11,7 +11,7 @@ public class FData {
     private static final List<Double> temperature = Arrays.asList(36.6, 37.2, 36.6, 38.4);
     private static final List<String> swimmingStuff = Arrays.asList("flippers", "mask", "swimming googles", "swimming cap");
     private static final List<String> posts = Arrays.asList("admin", "coach", "cleaner", "nurse");
-    private static int prevRandomId = -1;
+    private static final List<String> types = Arrays.asList("one time", "month", "year");
 
     public static String getName(){return names.get(rand.nextInt(names.size()));}
 
@@ -23,8 +23,11 @@ public class FData {
 
     public static String getSwimmingStuff(){return swimmingStuff.get(rand.nextInt(swimmingStuff.size()));}
 
+    public static String getType(){return types.get(rand.nextInt(types.size()));}
 
 
+
+    public static int getPassPrice(){return rand.nextInt() * 20;}
 
     public static double getSalary(){return rand.nextDouble() * 2000.0;}
 
