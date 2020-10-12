@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.Random;
 
 public class PassTest {
-    private final String endPoint = "http://localhost:8080/api/pass";
+    private final String endPoint = "http://192.168.56.1:8080/api/pass";
 
     private final Random rand = new Random();
 

@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.Random;
 
 public class ClientTest {
-    private final String endPoint = "http://localhost:8080/api/clients";
+    private final String endPoint = "http://192.168.56.1:8080/api/clients";
 
     private final Random rand = new Random();
 

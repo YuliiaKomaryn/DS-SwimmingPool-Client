@@ -11,8 +11,8 @@ import org.apache.http.client.methods.HttpPost;
 import java.io.IOException;
 import java.util.Random;
 
-public class StuffRent {
-    private final String endPoint = "http://localhost:8080/api/swimmingstuff";
+public class StuffRentTest {
+    private final String endPoint = "http://192.168.56.1:8080/api/swimmingstuff";
 
     private final Random rand = new Random();
 
